@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "tavily": {
+      "name": "Tavily AI Search",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=tavily",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "multi-search-engine": {
+      "name": "Multi Search Engine",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=multi-search-engine",
+      "source": "skillhub",
+      "version": "2.0.1"
+    },
+    "ai-news-collectors": {
+      "name": "ai-news-collectors",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=ai-news-collectors",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "stock-research-engine": {
+      "name": "stock-research-engine",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=stock-research-engine",
+      "source": "skillhub",
+      "version": "3.0.0"
+    },
+    "stock-monitor-skill-0-1-0": {
+      "name": "Stock Monitor Skill 0.1.0",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=stock-monitor-skill-0-1-0",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "stock-screener-cn": {
+      "name": "stock-screener-cn",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=stock-screener-cn",
+      "source": "skillhub",
+      "version": "1.0.0"
+    }
+  }
+}
