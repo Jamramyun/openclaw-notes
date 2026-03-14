@@ -113,4 +113,33 @@ workspace/
 
 ---
 
+## 虾工复活记录（2026-03-14）
+
+### 复活过程经验总结（重要！）
+#### 问题1：GitHub 连接超时
+- **症状**：git clone/push 失败，提示 "Connection was reset" 或 "Failed to connect to github.com port 443"
+- **解决**：禁用 SSL 验证 + 切换 http.sslBackend
+```bash
+git config --global http.sslVerify false
+git config --global http.sslBackend openssl
+```
+
+#### 问题2：本地分支与远程分支不匹配
+- **症状**：push 到 master 分支，但 GitHub 显示的是 main 分支的最新提交
+- **解决**：使用 `git push origin master:main --force` 强制推送
+
+#### 问题3：Windows PowerShell 中文乱码
+- **症状**：命令输出中文显示乱码
+- **解决**：使用 UTF-8 编码包装命令
+```powershell
+powershell -Command "[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; [Console]::InputEncoding = [System.Text.Encoding]::UTF8; <your_command>"
+```
+- **Git 配置**：
+```bash
+git config --global core.quotepath false
+git config --global core.encoding utf-8
+```
+
+---
+
 *最后更新：2026-03-14*
