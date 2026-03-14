@@ -1,4 +1,5 @@
-Write-Host "`$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - 虾工开始检查任务..." -ForegroundColor Cyan
+$beijingTime = (Get-Date).ToUniversalTime().AddHours(8)
+Write-Host "`$(`$beijingTime.ToString('yyyy-MM-dd HH:mm:ss')) [北京时间] - 虾工开始检查任务..." -ForegroundColor Cyan
 cd C:\openclaw\openclaw-notes
 
 # 拉取最新代码
